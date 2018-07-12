@@ -1,0 +1,227 @@
+/******************************************************************************
+** control 	: QPushButton
+** note		: 
+******************************************************************************/
+
+QPushButton {
+	color: white;
+	background-color: rgb(18, 130, 202);
+	border-style: outset;
+	border-width: 2px;
+	border-color: rgb(18, 130, 202);
+	border-radius: 4px;
+	font: bold 14px;
+	min-width: 60px;
+	min-height: 20px;
+	padding: 4px;
+}
+
+QPushButton:pressed {
+	background-color: rgb(74, 149, 220);
+	border-style: inset;
+	padding-left: 6px;
+	padding-top: 6px;
+}
+
+QPushButton#pushButton_return {
+	color: rgb(73, 159, 215);
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(255, 255, 255);
+	font: 18px;
+	min-width: 50px;
+	min-height: 26px;
+	max-height: 26px;
+	border-radius: 0px;
+}
+
+QPushButton#pushButton_return:pressed {
+	padding-right: 16px;
+	border-radius: 0px;
+}
+
+
+/******************************************************************************
+** control 	: QComboBox
+** note		: 
+******************************************************************************/
+
+QComboBox {
+	border: 1px solid #ECECEC;
+	border-radius: 5px;
+	min-width: 60px;
+	min-height: 20px;
+        background: white;
+}
+
+QComboBox QAbstractItemView::item {
+	min-height: 30px;
+}
+
+QComboBox::drop-down {
+        subcontrol-origin: padding;
+        subcontrol-position: top right;
+        width: 20px;
+        border-left-width: 1px;
+        border-left-color: darkgray;
+        border-left-style: solid;
+        /* just a single line */
+        border-top-right-radius: 3px;
+        /* same radius as the QComboBox */
+        border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+        image: url(:/img/drop-down.png);
+}
+
+QComboBox QAbstractItemView::item {
+	height: 25px;
+}
+
+QComboBox QAbstractItemView::item:selected {
+        background-color: #52A7DD;
+}
+
+
+/******************************************************************************
+** control 	: QLineEdit
+** note		: 
+******************************************************************************/
+
+QLineEdit {
+	border: 1px solid #ECECEC;
+	border-radius: 5px;
+	min-width: 60px;
+	min-height: 20px;
+}
+
+
+/******************************************************************************
+** control 	: QDateEdit
+** note		: 
+******************************************************************************/
+
+QDateEdit {
+	border: 1px solid #ECECEC;
+	border-radius: 5px;
+	min-width: 60px;
+	min-height: 20px;
+}
+
+QDateEdit::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 20px;
+	border-left-width: 1px;
+	border-left-color: darkgray;
+	border-left-style: solid;
+	/* just a single line */
+	border-top-right-radius: 3px;
+	/* same radius as the QComboBox */
+	border-bottom-right-radius: 3px;
+}
+
+QDateEdit::drop-down {
+        image: url(:/img/drop-down.png);
+}
+
+
+/******************************************************************************
+** control 	: QScrollBar
+** note		: 
+******************************************************************************/
+
+QScrollBar:vertical {
+	background: rgb(0, 0, 0);
+	width: 16px;
+}
+
+QScrollBar::handle:vertical {
+	background: gray;
+	width: 16px;
+	border-radius: 8px;
+	min-height: 10px;
+}
+
+QScrollBar:horizontal {
+	background: rgb(240, 240, 240);
+	height: 16px;
+}
+
+QScrollBar::handle:horizontal {
+	background: gray;
+	height: 16px;
+	border-radius: 8px;
+	min-width: 10px;
+}
+
+
+/******************************************************************************
+** control 	: QTreeview
+** note		: 
+******************************************************************************/
+
+QTreeview {
+	background-color: white;
+}
+
+QTreeview::item {
+	background-color: white;
+}
+
+QTreeview::item:selected {
+	color: black;
+	background-color: rgb(131, 160, 204);
+}
+
+QTreeView::indicator {
+	width: 15px;
+	height: 15px;
+	image: url(:/Image/check-box-2.png);
+}
+
+QTreeView::indicator::checked {
+	image: url(:/Image/check-box-1.png);
+}
+
+
+/******************************************************************************
+** control 	: QListView
+** note		: 
+******************************************************************************/
+
+QListView::item {
+	background: white;
+	border-radius: 5px;
+}
+
+QListView::item:hover {
+	background: #BDD7FD;
+	border-radius: 5px;
+}
+
+
+/******************************************************************************
+** control 	: QLabel
+** note		: 
+******************************************************************************/
+
+QLabel#Fault_top {
+	color: #000000;
+	font-family: "Microsoft Yahei";
+	font-size: 18px;
+	border: none;
+	text-align: center;
+	border-radius: 8px;
+	/* min-width: 10px; */
+}
+
+
+/******************************************************************************
+** control 	: QTextEdit
+** note		:
+******************************************************************************/
+
+QtextEdit {
+	border-color: rgb(255, 255, 255);
+}
